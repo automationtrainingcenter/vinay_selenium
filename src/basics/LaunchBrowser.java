@@ -14,7 +14,6 @@ public class LaunchBrowser {
 		WebDriver obj = new ChromeDriver();
 		// navigate to a url using get() method
 		obj.get("http://www.google.com");
-		
 		Thread.sleep(4000);
 		// to close a browser we can use close method
 		obj.close();
