@@ -70,7 +70,7 @@ public class LocatingTechniques {
 		driver.findElement(By.xpath("//button[@name='websubmit']"));
 		
 		// tagname
-		List<WebElement> inputTags = driver.findElements(By.tagName("input"));
+		List<WebElement>  inputTags = driver.findElements(By.tagName("input"));
 		System.out.println(inputTags.size());
 		
 		// class name
