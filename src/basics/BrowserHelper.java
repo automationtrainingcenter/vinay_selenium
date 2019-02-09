@@ -1,12 +1,22 @@
 package basics;
 
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserHelper {
 	protected static WebDriver driver;
+	
+	public static String getTime() {
+		Date date = new Date();
+		DateFormat df = new SimpleDateFormat("dd_MMM_yy-HH_mm_ss");
+		return df.format(date);
+	}
 	
 	public static void launchBrowser(String brName, String url) {
 		brName = brName.toLowerCase();
